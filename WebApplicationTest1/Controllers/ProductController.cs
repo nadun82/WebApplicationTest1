@@ -21,6 +21,15 @@ namespace WebApplicationTest1.Controllers
 
             // throw new Exception("Test");
             //return StatusCode(404, errorReponse);
+
+            string numberList = "";
+
+            for (int i = 0; i <= 100; i++)
+            {
+                numberList += i + " ";
+            }
+            
+
             return Ok(list);
             
         }
