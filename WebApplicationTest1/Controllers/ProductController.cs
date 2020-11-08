@@ -18,7 +18,9 @@ namespace WebApplicationTest1.Controllers
             //{
             //    numberList += i + " ";
             //}
-            
+
+            decimal dec1 = 3 / 2; // Noncompliant
+
 
             List<Product> list = new List<Product>();
             list.Add(new Product { id = 11, name = "IPhone", description = "Apple 6 ", unitprice = 75000.25 });
