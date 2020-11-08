@@ -17,10 +17,8 @@ namespace WebApplicationTest1.Controllers
             list.Add(new Product { id = 12, name = "Samsung", description = "Galaxy", unitprice = 175000.25 });
             list.Add(new Product { id = 13, name = "OPPO", description = "Oppo V5", unitprice = 45000.25 });
             list.Add(new Product { id = 14, name = "Huwawei", description = "Huwai 5X ", unitprice = 35000.25 });
-                        
-            
-                
-                
+                      
+                                      
             // throw new Exception("Test");
             return Ok(list);
             //return StatusCode(404, errorReponse);
