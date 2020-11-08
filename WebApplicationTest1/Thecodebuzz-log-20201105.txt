@@ -1,0 +1,27 @@
+2020-11-05 13:19:22.594 +05:30 [Information] User profile is available. Using '"C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-05 13:19:24.188 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-11-05 13:19:24.188 +05:30 [Information] Hosting environment: "Development"
+2020-11-05 13:19:24.188 +05:30 [Information] Content root path: "C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1"
+2020-11-05 13:19:24.320 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/weatherforecast  
+2020-11-05 13:19:24.747 +05:30 [Information] Request finished in 430.2747ms 404 
+2020-11-05 13:20:16.638 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Product/  
+2020-11-05 13:20:16.649 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-11-05 13:20:16.754 +05:30 [Information] Route matched with "{action = \"GetProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetProducts()" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-11-05 13:20:32.653 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebApplicationTest1.Controllers.ProductController+Product, WebApplicationTest1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-11-05 13:20:32.728 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)" in 15967.8452ms
+2020-11-05 13:20:32.728 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-11-05 13:20:32.728 +05:30 [Information] Request finished in 16090.8022ms 200 application/json; charset=utf-8
+2020-11-05 13:20:41.609 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Product/  
+2020-11-05 13:20:41.641 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-11-05 13:20:41.641 +05:30 [Information] Route matched with "{action = \"GetProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetProducts()" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-11-05 13:20:55.689 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebApplicationTest1.Controllers.ProductController+Product, WebApplicationTest1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-11-05 13:20:55.690 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)" in 14048.6354ms
+2020-11-05 13:20:55.690 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-11-05 13:20:55.691 +05:30 [Information] Request finished in 14081.7378ms 200 application/json; charset=utf-8
+2020-11-05 13:20:58.920 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Product/  
+2020-11-05 13:20:58.921 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-11-05 13:20:58.922 +05:30 [Information] Route matched with "{action = \"GetProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetProducts()" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-11-05 13:21:13.035 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebApplicationTest1.Controllers.ProductController+Product, WebApplicationTest1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-11-05 13:21:13.037 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)" in 14113.5402ms
+2020-11-05 13:21:13.037 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-11-05 13:21:13.037 +05:30 [Information] Request finished in 14116.9173ms 200 application/json; charset=utf-8

@@ -1,0 +1,233 @@
+2020-06-11 13:30:37.597 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Product/  
+2020-06-11 13:30:42.602 +05:30 [Information] CORS policy execution successful.
+2020-06-11 13:30:42.602 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-06-11 13:30:42.602 +05:30 [Information] Route matched with "{action = \"GetProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetProducts()" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-06-11 13:30:42.602 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebApplicationTest1.Controllers.Product, WebApplicationTest1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-11 13:30:42.602 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)" in 0.3224ms
+2020-06-11 13:30:42.603 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-06-11 13:30:42.604 +05:30 [Information] Request finished in 5005.3652ms 200 application/json; charset=utf-8
+2020-06-11 13:31:02.272 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Product/  
+2020-06-11 13:31:02.276 +05:30 [Information] CORS policy execution successful.
+2020-06-11 13:31:02.276 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-06-11 13:31:02.276 +05:30 [Information] Route matched with "{action = \"GetProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetProducts()" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-06-11 13:31:02.276 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebApplicationTest1.Controllers.Product, WebApplicationTest1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-11 13:31:02.308 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)" in 32.0317ms
+2020-06-11 13:31:02.309 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-06-11 13:31:02.309 +05:30 [Information] Request finished in 36.8154ms 200 application/json; charset=utf-8
+2020-06-11 13:55:58.195 +05:30 [Information] User profile is available. Using '"C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-11 13:56:00.775 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-06-11 13:56:00.775 +05:30 [Information] Hosting environment: "Development"
+2020-06-11 13:56:00.775 +05:30 [Information] Content root path: "C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1"
+2020-06-11 13:56:01.095 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Product/  
+2020-06-11 13:56:01.101 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/weatherforecast  
+2020-06-11 13:56:01.729 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-06-11 13:56:01.729 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-06-11 13:56:01.808 +05:30 [Information] Route matched with "{action = \"GetProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetProducts()" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-06-11 13:56:01.809 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[WebApplicationTest1.WeatherForecast] Get()" on controller "WebApplicationTest1.Controllers.WeatherForecastController" ("WebApplicationTest1").
+2020-06-11 13:56:01.813 +05:30 [Error] Test error
+2020-06-11 13:56:01.818 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebApplicationTest1.Controllers.Product, WebApplicationTest1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-11 13:56:01.818 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.WeatherForecast[]"'.
+2020-06-11 13:56:01.978 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)" in 156.078ms
+2020-06-11 13:56:01.979 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)" in 156.6262ms
+2020-06-11 13:56:01.979 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-06-11 13:56:01.979 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-06-11 13:56:01.981 +05:30 [Information] Request finished in 880.4961ms 200 application/json; charset=utf-8
+2020-06-11 13:56:02.031 +05:30 [Information] Request finished in 941.6264ms 200 application/json; charset=utf-8
+2020-06-11 13:57:29.533 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Product/  
+2020-06-11 13:57:29.768 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-06-11 13:57:29.770 +05:30 [Information] Route matched with "{action = \"GetProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetProducts()" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-06-11 13:57:29.771 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebApplicationTest1.Controllers.Product, WebApplicationTest1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-11 13:57:29.772 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)" in 1.7418ms
+2020-06-11 13:57:29.772 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-06-11 13:57:29.772 +05:30 [Information] Request finished in 253.6237ms 200 application/json; charset=utf-8
+2020-06-11 14:45:59.246 +05:30 [Information] User profile is available. Using '"C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-11 14:46:00.937 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-06-11 14:46:00.938 +05:30 [Information] Hosting environment: "Development"
+2020-06-11 14:46:00.938 +05:30 [Information] Content root path: "C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1"
+2020-06-11 14:46:01.105 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/weatherforecast  
+2020-06-11 14:46:01.514 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-06-11 14:46:01.572 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[WebApplicationTest1.WeatherForecast] Get()" on controller "WebApplicationTest1.Controllers.WeatherForecastController" ("WebApplicationTest1").
+2020-06-11 14:46:01.574 +05:30 [Error] Test error
+2020-06-11 14:46:01.584 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.WeatherForecast[]"'.
+2020-06-11 14:46:01.735 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)" in 157.2489ms
+2020-06-11 14:46:01.736 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-06-11 14:46:01.757 +05:30 [Information] Request finished in 656.4494ms 200 application/json; charset=utf-8
+2020-06-11 14:46:45.612 +05:30 [Information] Request starting HTTP/1.1 POST https://localhost:44382/Product/ application/json 169
+2020-06-11 14:46:45.625 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-06-11 14:46:45.818 +05:30 [Information] Route matched with "{action = \"SaveProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult SaveProducts(Product)" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-06-11 14:46:58.648 +05:30 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-06-11 14:46:58.649 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)" in 12831.1143ms
+2020-06-11 14:46:58.649 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-06-11 14:46:58.652 +05:30 [Information] Request finished in 13041.4801ms 200 
+2020-06-11 14:47:17.827 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Product/  
+2020-06-11 14:47:17.839 +05:30 [Information] CORS policy execution successful.
+2020-06-11 14:47:17.842 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-06-11 14:47:17.843 +05:30 [Information] Route matched with "{action = \"GetProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetProducts()" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-06-11 14:47:17.844 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebApplicationTest1.Controllers.ProductController+Product, WebApplicationTest1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-11 14:47:17.906 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)" in 62.3152ms
+2020-06-11 14:47:17.906 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-06-11 14:47:17.906 +05:30 [Information] Request finished in 80.1208ms 200 application/json; charset=utf-8
+2020-06-11 14:47:54.654 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Product/  
+2020-06-11 14:47:54.655 +05:30 [Information] CORS policy execution successful.
+2020-06-11 14:47:54.657 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-06-11 14:47:54.661 +05:30 [Information] Route matched with "{action = \"GetProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetProducts()" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-06-11 14:47:54.662 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebApplicationTest1.Controllers.ProductController+Product, WebApplicationTest1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-11 14:47:54.676 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)" in 11.1231ms
+2020-06-11 14:47:54.677 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-06-11 14:47:54.677 +05:30 [Information] Request finished in 23.2337ms 200 application/json; charset=utf-8
+2020-06-11 14:48:19.943 +05:30 [Information] Request starting HTTP/1.1 OPTIONS https://localhost:44382/Product/  
+2020-06-11 14:48:19.944 +05:30 [Information] CORS policy execution successful.
+2020-06-11 14:48:19.945 +05:30 [Information] Request finished in 1.9684ms 204 
+2020-06-11 14:48:19.957 +05:30 [Information] Request starting HTTP/1.1 POST https://localhost:44382/Product/ application/json 105
+2020-06-11 14:48:19.958 +05:30 [Information] CORS policy execution successful.
+2020-06-11 14:48:19.959 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-06-11 14:48:19.959 +05:30 [Information] Route matched with "{action = \"SaveProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult SaveProducts(Product)" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-06-11 14:48:26.230 +05:30 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-06-11 14:48:26.231 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)" in 6271.8471ms
+2020-06-11 14:48:26.231 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-06-11 14:48:26.232 +05:30 [Information] Request finished in 6275.4612ms 200 
+2020-06-11 14:49:01.451 +05:30 [Information] Request starting HTTP/1.1 OPTIONS https://localhost:44382/Product/  
+2020-06-11 14:49:01.453 +05:30 [Information] CORS policy execution successful.
+2020-06-11 14:49:01.456 +05:30 [Information] Request finished in 6.4848ms 204 
+2020-06-11 14:49:01.464 +05:30 [Information] Request starting HTTP/1.1 POST https://localhost:44382/Product/ application/json 97
+2020-06-11 14:49:01.465 +05:30 [Information] CORS policy execution successful.
+2020-06-11 14:49:01.467 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-06-11 14:49:01.468 +05:30 [Information] Route matched with "{action = \"SaveProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult SaveProducts(Product)" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-06-11 14:51:18.949 +05:30 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-06-11 14:51:18.949 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)" in 137479.092ms
+2020-06-11 14:51:18.949 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-06-11 14:51:18.952 +05:30 [Information] Request starting HTTP/1.1 OPTIONS https://localhost:44382/Product/  
+2020-06-11 14:51:18.952 +05:30 [Information] CORS policy execution successful.
+2020-06-11 14:51:18.952 +05:30 [Information] Request finished in 0.4648ms 204 
+2020-06-11 14:51:18.961 +05:30 [Information] Request finished in 137495.618ms 200 
+2020-06-11 14:51:18.961 +05:30 [Information] Request starting HTTP/1.1 POST https://localhost:44382/Product/ application/json 105
+2020-06-11 14:51:18.962 +05:30 [Information] CORS policy execution successful.
+2020-06-11 14:51:18.962 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-06-11 14:51:18.962 +05:30 [Information] Request starting HTTP/1.1 OPTIONS https://localhost:44382/Product/  
+2020-06-11 14:51:18.962 +05:30 [Information] CORS policy execution successful.
+2020-06-11 14:51:18.962 +05:30 [Information] Request finished in 0.3027ms 204 
+2020-06-11 14:51:18.962 +05:30 [Information] Route matched with "{action = \"SaveProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult SaveProducts(Product)" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-06-11 14:51:18.964 +05:30 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-06-11 14:51:18.964 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)" in 1.6481ms
+2020-06-11 14:51:18.964 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-06-11 14:51:18.964 +05:30 [Information] Request finished in 3.1013ms 200 
+2020-06-11 14:51:18.967 +05:30 [Information] Request starting HTTP/1.1 POST https://localhost:44382/Product/ application/json 104
+2020-06-11 14:51:18.967 +05:30 [Information] CORS policy execution successful.
+2020-06-11 14:51:18.968 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-06-11 14:51:18.968 +05:30 [Information] Route matched with "{action = \"SaveProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult SaveProducts(Product)" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-06-11 14:51:18.968 +05:30 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-06-11 14:51:18.968 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)" in 0.2813ms
+2020-06-11 14:51:18.968 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-06-11 14:51:18.974 +05:30 [Information] Request finished in 6.4716ms 200 
+2020-06-11 14:52:18.503 +05:30 [Information] User profile is available. Using '"C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-11 14:52:18.955 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-06-11 14:52:18.955 +05:30 [Information] Hosting environment: "Development"
+2020-06-11 14:52:18.955 +05:30 [Information] Content root path: "C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1"
+2020-06-11 14:52:19.032 +05:30 [Information] Request starting HTTP/1.1 OPTIONS https://localhost:44382/Product/  
+2020-06-11 14:52:19.063 +05:30 [Information] CORS policy execution successful.
+2020-06-11 14:52:19.095 +05:30 [Information] Request finished in 66.5305ms 204 
+2020-06-11 14:52:19.095 +05:30 [Information] Request starting HTTP/1.1 POST https://localhost:44382/Product/ application/json 105
+2020-06-11 14:52:19.108 +05:30 [Information] CORS policy execution successful.
+2020-06-11 14:52:19.276 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-06-11 14:52:19.308 +05:30 [Information] Route matched with "{action = \"SaveProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult SaveProducts(Product)" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-06-11 14:52:19.342 +05:30 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-06-11 14:52:19.346 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)" in 33.4861ms
+2020-06-11 14:52:19.347 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-06-11 14:52:19.350 +05:30 [Information] Request finished in 255.4524ms 200 
+2020-06-11 14:52:20.260 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/weatherforecast  
+2020-06-11 14:52:20.271 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-06-11 14:52:20.285 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[WebApplicationTest1.WeatherForecast] Get()" on controller "WebApplicationTest1.Controllers.WeatherForecastController" ("WebApplicationTest1").
+2020-06-11 14:52:20.287 +05:30 [Error] Test error
+2020-06-11 14:52:20.294 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.WeatherForecast[]"'.
+2020-06-11 14:52:20.311 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)" in 26.1391ms
+2020-06-11 14:52:20.311 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-06-11 14:52:20.312 +05:30 [Information] Request finished in 52.7294ms 200 application/json; charset=utf-8
+2020-06-11 14:53:07.175 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Product/  
+2020-06-11 14:53:07.176 +05:30 [Information] CORS policy execution successful.
+2020-06-11 14:53:07.180 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-06-11 14:53:07.183 +05:30 [Information] Route matched with "{action = \"GetProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetProducts()" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-06-11 14:53:07.186 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebApplicationTest1.Controllers.ProductController+Product, WebApplicationTest1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-11 14:53:07.277 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)" in 92.7886ms
+2020-06-11 14:53:07.277 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-06-11 14:53:07.278 +05:30 [Information] Request finished in 103.0945ms 200 application/json; charset=utf-8
+2020-06-11 14:54:04.340 +05:30 [Information] Request starting HTTP/1.1 OPTIONS https://localhost:44382/Product/  
+2020-06-11 14:54:04.341 +05:30 [Information] CORS policy execution successful.
+2020-06-11 14:54:04.343 +05:30 [Information] Request finished in 2.7288ms 204 
+2020-06-11 14:54:04.386 +05:30 [Information] Request starting HTTP/1.1 POST https://localhost:44382/Product/ application/json 104
+2020-06-11 14:54:04.387 +05:30 [Information] CORS policy execution successful.
+2020-06-11 14:54:04.388 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-06-11 14:54:04.389 +05:30 [Information] Route matched with "{action = \"SaveProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult SaveProducts(Product)" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-06-11 14:54:04.391 +05:30 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-06-11 14:54:04.391 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)" in 2.1305ms
+2020-06-11 14:54:04.391 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-06-11 14:54:04.392 +05:30 [Information] Request finished in 5.9361ms 200 
+2020-06-11 14:56:07.961 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Product/  
+2020-06-11 14:56:07.966 +05:30 [Information] CORS policy execution successful.
+2020-06-11 14:56:07.967 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-06-11 14:56:07.971 +05:30 [Information] Route matched with "{action = \"GetProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetProducts()" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-06-11 14:56:07.972 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebApplicationTest1.Controllers.ProductController+Product, WebApplicationTest1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-11 14:56:07.973 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)" in 1.6832ms
+2020-06-11 14:56:07.973 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-06-11 14:56:07.973 +05:30 [Information] Request finished in 12.4261ms 200 application/json; charset=utf-8
+2020-06-11 14:56:52.381 +05:30 [Information] User profile is available. Using '"C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-11 14:56:52.810 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-06-11 14:56:52.811 +05:30 [Information] Hosting environment: "Development"
+2020-06-11 14:56:52.811 +05:30 [Information] Content root path: "C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1"
+2020-06-11 14:56:52.870 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/weatherforecast  
+2020-06-11 14:56:53.036 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-06-11 14:56:53.066 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[WebApplicationTest1.WeatherForecast] Get()" on controller "WebApplicationTest1.Controllers.WeatherForecastController" ("WebApplicationTest1").
+2020-06-11 14:56:53.068 +05:30 [Error] Test error
+2020-06-11 14:56:53.075 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.WeatherForecast[]"'.
+2020-06-11 14:56:53.117 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)" in 46.1685ms
+2020-06-11 14:56:53.119 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-06-11 14:56:53.122 +05:30 [Information] Request finished in 256.495ms 200 application/json; charset=utf-8
+2020-06-11 14:57:27.689 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Product/  
+2020-06-11 14:57:27.700 +05:30 [Information] CORS policy execution successful.
+2020-06-11 14:57:27.703 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-06-11 14:57:27.707 +05:30 [Information] Route matched with "{action = \"GetProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetProducts()" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-06-11 14:57:27.709 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebApplicationTest1.Controllers.ProductController+Product, WebApplicationTest1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-11 14:57:27.722 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)" in 14.957ms
+2020-06-11 14:57:27.722 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-06-11 14:57:27.735 +05:30 [Information] Request finished in 45.9657ms 200 application/json; charset=utf-8
+2020-06-11 14:58:58.755 +05:30 [Information] User profile is available. Using '"C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-11 14:58:59.098 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-06-11 14:58:59.099 +05:30 [Information] Hosting environment: "Development"
+2020-06-11 14:58:59.099 +05:30 [Information] Content root path: "C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1"
+2020-06-11 14:58:59.162 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/weatherforecast  
+2020-06-11 14:58:59.294 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-06-11 14:58:59.314 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[WebApplicationTest1.WeatherForecast] Get()" on controller "WebApplicationTest1.Controllers.WeatherForecastController" ("WebApplicationTest1").
+2020-06-11 14:58:59.316 +05:30 [Error] Test error
+2020-06-11 14:58:59.320 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.WeatherForecast[]"'.
+2020-06-11 14:58:59.370 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)" in 46.4319ms
+2020-06-11 14:58:59.371 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-06-11 14:58:59.374 +05:30 [Information] Request finished in 215.6302ms 200 application/json; charset=utf-8
+2020-06-11 15:00:16.834 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Product/  
+2020-06-11 15:00:16.900 +05:30 [Information] CORS policy execution successful.
+2020-06-11 15:00:16.903 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-06-11 15:00:16.906 +05:30 [Information] Route matched with "{action = \"GetProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetProducts()" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-06-11 15:00:16.909 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebApplicationTest1.Controllers.ProductController+Product, WebApplicationTest1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-11 15:00:16.924 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)" in 17.398ms
+2020-06-11 15:00:16.925 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-06-11 15:00:16.925 +05:30 [Information] Request finished in 105.0296ms 200 application/json; charset=utf-8
+2020-06-11 15:00:37.041 +05:30 [Information] Request starting HTTP/1.1 OPTIONS https://localhost:44382/Product/  
+2020-06-11 15:00:37.045 +05:30 [Information] CORS policy execution successful.
+2020-06-11 15:00:37.058 +05:30 [Information] Request finished in 16.3772ms 204 
+2020-06-11 15:00:37.120 +05:30 [Information] Request starting HTTP/1.1 POST https://localhost:44382/Product/ application/json 105
+2020-06-11 15:00:37.122 +05:30 [Information] CORS policy execution successful.
+2020-06-11 15:00:37.127 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-06-11 15:00:37.149 +05:30 [Information] Route matched with "{action = \"SaveProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult SaveProducts(Product)" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-06-11 15:00:37.195 +05:30 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-06-11 15:00:37.196 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)" in 46.5777ms
+2020-06-11 15:00:37.196 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-06-11 15:00:37.200 +05:30 [Information] Request finished in 87.4609ms 200 
+2020-06-11 15:01:15.627 +05:30 [Information] Request starting HTTP/1.1 OPTIONS https://localhost:44382/Product/  
+2020-06-11 15:01:15.628 +05:30 [Information] CORS policy execution successful.
+2020-06-11 15:01:15.630 +05:30 [Information] Request finished in 2.6172ms 204 
+2020-06-11 15:01:15.640 +05:30 [Information] Request starting HTTP/1.1 POST https://localhost:44382/Product/ application/json 105
+2020-06-11 15:01:15.643 +05:30 [Information] CORS policy execution successful.
+2020-06-11 15:01:15.644 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-06-11 15:01:15.646 +05:30 [Information] Route matched with "{action = \"SaveProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult SaveProducts(Product)" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-06-11 15:01:17.438 +05:30 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-06-11 15:01:17.439 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)" in 1791.2048ms
+2020-06-11 15:01:17.439 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-06-11 15:01:17.441 +05:30 [Information] Request finished in 1798.9354ms 200 

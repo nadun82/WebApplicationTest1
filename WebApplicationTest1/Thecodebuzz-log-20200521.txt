@@ -1,0 +1,495 @@
+2020-05-21 16:32:42.173 +05:30 [Information] Now listening on: "https://localhost:5001"
+2020-05-21 16:32:42.226 +05:30 [Information] Now listening on: "http://localhost:5000"
+2020-05-21 16:32:42.227 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-05-21 16:32:42.227 +05:30 [Information] Hosting environment: "Development"
+2020-05-21 16:32:42.227 +05:30 [Information] Content root path: "C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1"
+2020-05-21 16:32:43.162 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:5001/weatherforecast  
+2020-05-21 16:32:43.215 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-05-21 16:32:43.300 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[WebApplicationTest1.WeatherForecast] Get()" on controller "WebApplicationTest1.Controllers.WeatherForecastController" ("WebApplicationTest1").
+2020-05-21 16:32:43.305 +05:30 [Error] Test error
+2020-05-21 16:32:43.309 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.WeatherForecast[]"'.
+2020-05-21 16:32:43.346 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)" in 37.4674ms
+2020-05-21 16:32:43.347 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-05-21 16:32:43.348 +05:30 [Information] Request finished in 189.3042ms 200 application/json; charset=utf-8
+2020-05-21 16:32:55.071 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:5001/Employee/04564  
+2020-05-21 16:32:55.078 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 16:32:55.097 +05:30 [Information] Route matched with "{action = \"GetEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetEmployee(Int32)" on controller "WebApplicationTest1.Controllers.EmployeeController" ("WebApplicationTest1").
+2020-05-21 16:32:55.329 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)" in 231.7328ms
+2020-05-21 16:32:55.364 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 16:32:55.459 +05:30 [Error] An unhandled exception has occurred while executing the request.
+System.Exception: Invalid ID
+   at WebApplicationTest1.Controllers.EmployeeController.GetEmployee(Int32 id) in C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1\Controllers\EmployeeController.cs:line 37
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2020-05-21 16:32:55.529 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ErrorController.ErrorLocalDevelopment (WebApplicationTest1)"'
+2020-05-21 16:32:55.530 +05:30 [Information] Route matched with "{action = \"ErrorLocalDevelopment\", controller = \"Error\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ErrorLocalDevelopment(Microsoft.AspNetCore.Hosting.IWebHostEnvironment)" on controller "WebApplicationTest1.Controllers.ErrorController" ("WebApplicationTest1").
+2020-05-21 16:32:55.539 +05:30 [Error] {"ErrorId":50010,"ErrorMessgae":"Error in Server ","StackTrace":"   at WebApplicationTest1.Controllers.EmployeeController.GetEmployee(Int32 id) in C:\\Users\\Home\\source\\repos\\WebApplicationTest1\\WebApplicationTest1\\Controllers\\EmployeeController.cs:line 37\r\n   at lambda_method(Closure , Object , Object[] )\r\n   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State\u0026 next, Scope\u0026 scope, Object\u0026 state, Boolean\u0026 isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State\u0026 next, Scope\u0026 scope, Object\u0026 state, Boolean\u0026 isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.\u003CInvokeFilterPipelineAsync\u003Eg__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.\u003CInvokeAsync\u003Eg__Logged|17_1(ResourceInvoker invoker)\r\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.\u003CInvoke\u003Eg__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)\r\n   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.\u003CInvoke\u003Eg__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)"}
+2020-05-21 16:32:55.540 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.ErrorResonse"'.
+2020-05-21 16:32:55.541 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ErrorController.ErrorLocalDevelopment (WebApplicationTest1)" in 10.4581ms
+2020-05-21 16:32:55.541 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ErrorController.ErrorLocalDevelopment (WebApplicationTest1)"'
+2020-05-21 16:32:55.541 +05:30 [Information] Request finished in 470.2883ms 500 application/json; charset=utf-8
+2020-05-21 19:23:27.293 +05:30 [Information] User profile is available. Using '"C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-21 19:23:27.518 +05:30 [Information] Creating key {fe02aff0-fe38-4f0c-b83c-44efa4dc5c70} with creation date 2020-05-21 13:53:27Z, activation date 2020-05-21 13:53:27Z, and expiration date 2020-08-19 13:53:27Z.
+2020-05-21 19:23:28.056 +05:30 [Information] Writing data to file '"C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys\key-fe02aff0-fe38-4f0c-b83c-44efa4dc5c70.xml"'.
+2020-05-21 19:23:29.515 +05:30 [Information] Now listening on: "https://localhost:5001"
+2020-05-21 19:23:29.520 +05:30 [Information] Now listening on: "http://localhost:5000"
+2020-05-21 19:23:29.521 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-05-21 19:23:29.521 +05:30 [Information] Hosting environment: "Development"
+2020-05-21 19:23:29.521 +05:30 [Information] Content root path: "C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1"
+2020-05-21 19:23:33.949 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:5001/weatherforecast  
+2020-05-21 19:23:34.193 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-05-21 19:23:34.218 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[WebApplicationTest1.WeatherForecast] Get()" on controller "WebApplicationTest1.Controllers.WeatherForecastController" ("WebApplicationTest1").
+2020-05-21 19:23:34.220 +05:30 [Error] Test error
+2020-05-21 19:23:34.224 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.WeatherForecast[]"'.
+2020-05-21 19:23:34.286 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)" in 63.3982ms
+2020-05-21 19:23:34.286 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-05-21 19:23:34.288 +05:30 [Information] Request finished in 342.401ms 200 application/json; charset=utf-8
+2020-05-21 19:24:54.956 +05:30 [Information] Request starting HTTP/1.1 POST https://localhost:5001/users/authenticate application/json 53
+2020-05-21 19:24:54.961 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.UsersController.Authenticate (WebApplicationTest1)"'
+2020-05-21 19:24:55.041 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"Users\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(WebApplicationTest1.Controllers.AuthenticateModel)" on controller "WebApplicationTest1.Controllers.UsersController" ("WebApplicationTest1").
+2020-05-21 19:26:47.608 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.User"'.
+2020-05-21 19:26:47.637 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.UsersController.Authenticate (WebApplicationTest1)" in 112593.6461ms
+2020-05-21 19:26:47.689 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.UsersController.Authenticate (WebApplicationTest1)"'
+2020-05-21 19:26:47.798 +05:30 [Information] Request finished in 112840.3838ms 200 application/json; charset=utf-8
+2020-05-21 19:27:47.178 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:5001/Employee/2  
+2020-05-21 19:27:47.231 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:27:47.238 +05:30 [Information] Route matched with "{action = \"GetEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetEmployee(Int32)" on controller "WebApplicationTest1.Controllers.EmployeeController" ("WebApplicationTest1").
+2020-05-21 19:27:47.241 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.Employee"'.
+2020-05-21 19:27:47.251 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)" in 12.7165ms
+2020-05-21 19:27:47.251 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:27:47.257 +05:30 [Information] Request finished in 74.1312ms 200 application/json; charset=utf-8
+2020-05-21 19:28:39.141 +05:30 [Information] User profile is available. Using '"C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-21 19:28:39.621 +05:30 [Information] Now listening on: "https://localhost:5001"
+2020-05-21 19:28:39.621 +05:30 [Information] Now listening on: "http://localhost:5000"
+2020-05-21 19:28:39.622 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-05-21 19:28:39.622 +05:30 [Information] Hosting environment: "Development"
+2020-05-21 19:28:39.622 +05:30 [Information] Content root path: "C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1"
+2020-05-21 19:28:41.692 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:5001/weatherforecast  
+2020-05-21 19:28:41.902 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-05-21 19:28:41.936 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[WebApplicationTest1.WeatherForecast] Get()" on controller "WebApplicationTest1.Controllers.WeatherForecastController" ("WebApplicationTest1").
+2020-05-21 19:28:41.938 +05:30 [Error] Test error
+2020-05-21 19:28:41.942 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.WeatherForecast[]"'.
+2020-05-21 19:28:41.982 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)" in 37.493ms
+2020-05-21 19:28:41.982 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-05-21 19:28:41.984 +05:30 [Information] Request finished in 298.9153ms 200 application/json; charset=utf-8
+2020-05-21 19:28:51.737 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:5001/Employee/2  
+2020-05-21 19:28:51.750 +05:30 [Information] Authorization failed.
+2020-05-21 19:28:51.764 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2020-05-21 19:28:51.765 +05:30 [Information] Request finished in 28.3555ms 401 
+2020-05-21 19:28:55.834 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:5001/Employee/2  
+2020-05-21 19:28:55.837 +05:30 [Information] Authorization failed.
+2020-05-21 19:28:55.837 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2020-05-21 19:28:55.838 +05:30 [Information] Request finished in 4.4342ms 401 
+2020-05-21 19:29:24.453 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:5001/Employee/2  
+2020-05-21 19:29:24.457 +05:30 [Information] Authorization failed.
+2020-05-21 19:29:24.464 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2020-05-21 19:29:24.466 +05:30 [Information] Request finished in 14.953ms 401 
+2020-05-21 19:29:28.159 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:5001/Employee/2  
+2020-05-21 19:29:28.162 +05:30 [Information] Authorization failed.
+2020-05-21 19:29:28.162 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2020-05-21 19:29:28.163 +05:30 [Information] Request finished in 4.6472ms 401 
+2020-05-21 19:30:02.763 +05:30 [Information] Request starting HTTP/1.1 POST https://localhost:5001/users/authenticate application/json 53
+2020-05-21 19:30:02.764 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.UsersController.Authenticate (WebApplicationTest1)"'
+2020-05-21 19:30:02.791 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"Users\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(WebApplicationTest1.Controllers.AuthenticateModel)" on controller "WebApplicationTest1.Controllers.UsersController" ("WebApplicationTest1").
+2020-05-21 19:30:05.988 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.User"'.
+2020-05-21 19:30:05.994 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.UsersController.Authenticate (WebApplicationTest1)" in 3199.8038ms
+2020-05-21 19:30:05.994 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.UsersController.Authenticate (WebApplicationTest1)"'
+2020-05-21 19:30:05.994 +05:30 [Information] Request finished in 3232.2798ms 200 application/json; charset=utf-8
+2020-05-21 19:30:32.177 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:5001/Employee/2  
+2020-05-21 19:30:32.286 +05:30 [Information] Successfully validated the token.
+2020-05-21 19:30:32.288 +05:30 [Information] Authorization was successful.
+2020-05-21 19:30:32.288 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:30:32.291 +05:30 [Information] Route matched with "{action = \"GetEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetEmployee(Int32)" on controller "WebApplicationTest1.Controllers.EmployeeController" ("WebApplicationTest1").
+2020-05-21 19:30:32.293 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.Employee"'.
+2020-05-21 19:30:32.295 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)" in 3.6499ms
+2020-05-21 19:30:32.295 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:30:32.295 +05:30 [Information] Request finished in 118.5809ms 200 application/json; charset=utf-8
+2020-05-21 19:30:47.558 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:5001/Employee/2  
+2020-05-21 19:30:47.605 +05:30 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-05-21 19:30:47.983 +05:30 [Information] "Bearer" was not authenticated. Failure message: "IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'."
+2020-05-21 19:30:47.984 +05:30 [Information] Authorization failed.
+2020-05-21 19:30:47.989 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2020-05-21 19:30:47.992 +05:30 [Information] Request finished in 433.7994ms 401 
+2020-05-21 19:30:54.267 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:5001/Employee/2  
+2020-05-21 19:30:54.271 +05:30 [Information] Successfully validated the token.
+2020-05-21 19:30:54.272 +05:30 [Information] Authorization was successful.
+2020-05-21 19:30:54.272 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:30:54.273 +05:30 [Information] Route matched with "{action = \"GetEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetEmployee(Int32)" on controller "WebApplicationTest1.Controllers.EmployeeController" ("WebApplicationTest1").
+2020-05-21 19:30:54.275 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.Employee"'.
+2020-05-21 19:30:54.276 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)" in 2.311ms
+2020-05-21 19:30:54.276 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:30:54.276 +05:30 [Information] Request finished in 9.536ms 200 application/json; charset=utf-8
+2020-05-21 19:31:06.444 +05:30 [Information] User profile is available. Using '"C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-21 19:31:06.941 +05:30 [Information] Now listening on: "https://localhost:5001"
+2020-05-21 19:31:06.941 +05:30 [Information] Now listening on: "http://localhost:5000"
+2020-05-21 19:31:06.942 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-05-21 19:31:06.942 +05:30 [Information] Hosting environment: "Development"
+2020-05-21 19:31:06.942 +05:30 [Information] Content root path: "C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1"
+2020-05-21 19:31:08.880 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:5001/weatherforecast  
+2020-05-21 19:31:09.063 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-05-21 19:31:09.096 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[WebApplicationTest1.WeatherForecast] Get()" on controller "WebApplicationTest1.Controllers.WeatherForecastController" ("WebApplicationTest1").
+2020-05-21 19:31:09.098 +05:30 [Error] Test error
+2020-05-21 19:31:09.102 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.WeatherForecast[]"'.
+2020-05-21 19:31:09.143 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)" in 37.9493ms
+2020-05-21 19:31:09.143 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-05-21 19:31:09.145 +05:30 [Information] Request finished in 268.9329ms 200 application/json; charset=utf-8
+2020-05-21 19:31:13.029 +05:30 [Information] Application is shutting down...
+2020-05-21 19:31:18.031 +05:30 [Information] User profile is available. Using '"C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-21 19:31:18.631 +05:30 [Information] Now listening on: "https://localhost:5001"
+2020-05-21 19:31:18.631 +05:30 [Information] Now listening on: "http://localhost:5000"
+2020-05-21 19:31:18.638 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-05-21 19:31:18.638 +05:30 [Information] Hosting environment: "Development"
+2020-05-21 19:31:18.639 +05:30 [Information] Content root path: "C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1"
+2020-05-21 19:31:20.730 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:5001/weatherforecast  
+2020-05-21 19:31:20.911 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-05-21 19:31:20.960 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[WebApplicationTest1.WeatherForecast] Get()" on controller "WebApplicationTest1.Controllers.WeatherForecastController" ("WebApplicationTest1").
+2020-05-21 19:31:20.963 +05:30 [Error] Test error
+2020-05-21 19:31:20.979 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.WeatherForecast[]"'.
+2020-05-21 19:31:21.044 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)" in 67.9184ms
+2020-05-21 19:31:21.045 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-05-21 19:31:21.047 +05:30 [Information] Request finished in 330.9319ms 200 application/json; charset=utf-8
+2020-05-21 19:31:27.484 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:5001/Employee/2  
+2020-05-21 19:31:27.772 +05:30 [Information] Successfully validated the token.
+2020-05-21 19:31:27.782 +05:30 [Information] Authorization was successful.
+2020-05-21 19:31:27.782 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:31:27.800 +05:30 [Information] Route matched with "{action = \"GetEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetEmployee(Int32)" on controller "WebApplicationTest1.Controllers.EmployeeController" ("WebApplicationTest1").
+2020-05-21 19:31:27.832 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.Employee"'.
+2020-05-21 19:31:27.835 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)" in 34.7497ms
+2020-05-21 19:31:27.835 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:31:27.836 +05:30 [Information] Request finished in 352.9797ms 200 application/json; charset=utf-8
+2020-05-21 19:31:29.285 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:5001/Employee/2  
+2020-05-21 19:31:29.290 +05:30 [Information] Successfully validated the token.
+2020-05-21 19:31:29.291 +05:30 [Information] Authorization was successful.
+2020-05-21 19:31:29.291 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:31:29.291 +05:30 [Information] Route matched with "{action = \"GetEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetEmployee(Int32)" on controller "WebApplicationTest1.Controllers.EmployeeController" ("WebApplicationTest1").
+2020-05-21 19:31:29.293 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.Employee"'.
+2020-05-21 19:31:29.293 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)" in 1.9504ms
+2020-05-21 19:31:29.294 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:31:29.294 +05:30 [Information] Request finished in 9.669ms 200 application/json; charset=utf-8
+2020-05-21 19:31:30.477 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:5001/Employee/2  
+2020-05-21 19:31:30.481 +05:30 [Information] Successfully validated the token.
+2020-05-21 19:31:30.483 +05:30 [Information] Authorization was successful.
+2020-05-21 19:31:30.483 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:31:30.484 +05:30 [Information] Route matched with "{action = \"GetEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetEmployee(Int32)" on controller "WebApplicationTest1.Controllers.EmployeeController" ("WebApplicationTest1").
+2020-05-21 19:31:30.487 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.Employee"'.
+2020-05-21 19:31:30.490 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)" in 4.8657ms
+2020-05-21 19:31:30.490 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:31:30.491 +05:30 [Information] Request finished in 13.9143ms 200 application/json; charset=utf-8
+2020-05-21 19:32:01.012 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:5001/Employee/2  
+2020-05-21 19:32:01.014 +05:30 [Information] Successfully validated the token.
+2020-05-21 19:32:01.015 +05:30 [Information] Authorization was successful.
+2020-05-21 19:32:01.015 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:32:01.016 +05:30 [Information] Route matched with "{action = \"GetEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetEmployee(Int32)" on controller "WebApplicationTest1.Controllers.EmployeeController" ("WebApplicationTest1").
+2020-05-21 19:32:01.017 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.Employee"'.
+2020-05-21 19:32:01.018 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)" in 2.2793ms
+2020-05-21 19:32:01.018 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:32:01.019 +05:30 [Information] Request finished in 6.9471ms 200 application/json; charset=utf-8
+2020-05-21 19:34:11.773 +05:30 [Information] User profile is available. Using '"C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-21 19:34:12.355 +05:30 [Information] Now listening on: "https://localhost:5001"
+2020-05-21 19:34:12.359 +05:30 [Information] Now listening on: "http://localhost:5000"
+2020-05-21 19:34:12.360 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-05-21 19:34:12.360 +05:30 [Information] Hosting environment: "Development"
+2020-05-21 19:34:12.360 +05:30 [Information] Content root path: "C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1"
+2020-05-21 19:34:14.723 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:5001/weatherforecast  
+2020-05-21 19:34:14.908 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-05-21 19:34:14.942 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[WebApplicationTest1.WeatherForecast] Get()" on controller "WebApplicationTest1.Controllers.WeatherForecastController" ("WebApplicationTest1").
+2020-05-21 19:34:14.946 +05:30 [Error] Test error
+2020-05-21 19:34:14.956 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.WeatherForecast[]"'.
+2020-05-21 19:34:15.033 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)" in 80.3022ms
+2020-05-21 19:34:15.033 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-05-21 19:34:15.035 +05:30 [Information] Request finished in 315.8544ms 200 application/json; charset=utf-8
+2020-05-21 19:34:51.894 +05:30 [Information] User profile is available. Using '"C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-21 19:34:53.181 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-05-21 19:34:53.201 +05:30 [Information] Hosting environment: "Development"
+2020-05-21 19:34:53.202 +05:30 [Information] Content root path: "C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1"
+2020-05-21 19:34:53.256 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/weatherforecast  
+2020-05-21 19:34:53.525 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-05-21 19:34:53.557 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[WebApplicationTest1.WeatherForecast] Get()" on controller "WebApplicationTest1.Controllers.WeatherForecastController" ("WebApplicationTest1").
+2020-05-21 19:34:53.560 +05:30 [Error] Test error
+2020-05-21 19:34:53.569 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.WeatherForecast[]"'.
+2020-05-21 19:34:53.639 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)" in 74.824ms
+2020-05-21 19:34:53.640 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-05-21 19:34:53.643 +05:30 [Information] Request finished in 390.9184ms 200 application/json; charset=utf-8
+2020-05-21 19:35:16.447 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Employee/2  
+2020-05-21 19:35:16.768 +05:30 [Information] Successfully validated the token.
+2020-05-21 19:35:16.773 +05:30 [Information] Authorization was successful.
+2020-05-21 19:35:16.773 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:35:16.795 +05:30 [Information] Route matched with "{action = \"GetEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetEmployee(Int32)" on controller "WebApplicationTest1.Controllers.EmployeeController" ("WebApplicationTest1").
+2020-05-21 19:35:16.814 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.Employee"'.
+2020-05-21 19:35:16.845 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)" in 49.27ms
+2020-05-21 19:35:16.845 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:35:16.845 +05:30 [Information] Request finished in 398.9008ms 200 application/json; charset=utf-8
+2020-05-21 19:35:21.456 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Employee/2  
+2020-05-21 19:35:21.464 +05:30 [Information] Successfully validated the token.
+2020-05-21 19:35:21.465 +05:30 [Information] Authorization was successful.
+2020-05-21 19:35:21.466 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:35:21.466 +05:30 [Information] Route matched with "{action = \"GetEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetEmployee(Int32)" on controller "WebApplicationTest1.Controllers.EmployeeController" ("WebApplicationTest1").
+2020-05-21 19:35:21.467 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.Employee"'.
+2020-05-21 19:35:21.468 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)" in 1.4971ms
+2020-05-21 19:35:21.468 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:35:21.468 +05:30 [Information] Request finished in 12.5317ms 200 application/json; charset=utf-8
+2020-05-21 19:35:39.261 +05:30 [Information] Request starting HTTP/1.1 POST https://localhost:44382/users/authenticate application/json 53
+2020-05-21 19:35:39.263 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.UsersController.Authenticate (WebApplicationTest1)"'
+2020-05-21 19:35:39.268 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"Users\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(WebApplicationTest1.Controllers.AuthenticateModel)" on controller "WebApplicationTest1.Controllers.UsersController" ("WebApplicationTest1").
+2020-05-21 19:35:39.462 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.User"'.
+2020-05-21 19:35:39.465 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.UsersController.Authenticate (WebApplicationTest1)" in 197.7297ms
+2020-05-21 19:35:39.466 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.UsersController.Authenticate (WebApplicationTest1)"'
+2020-05-21 19:35:39.466 +05:30 [Information] Request finished in 205.0421ms 200 application/json; charset=utf-8
+2020-05-21 19:36:06.721 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Employee/2  
+2020-05-21 19:36:06.982 +05:30 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-05-21 19:36:07.103 +05:30 [Information] "Bearer" was not authenticated. Failure message: "IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'."
+2020-05-21 19:36:07.104 +05:30 [Information] Authorization failed.
+2020-05-21 19:36:07.113 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2020-05-21 19:36:07.163 +05:30 [Information] Request finished in 441.9011ms 401 
+2020-05-21 19:36:12.506 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Employee/2  
+2020-05-21 19:36:12.509 +05:30 [Information] Successfully validated the token.
+2020-05-21 19:36:12.510 +05:30 [Information] Authorization was successful.
+2020-05-21 19:36:12.510 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:36:12.510 +05:30 [Information] Route matched with "{action = \"GetEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetEmployee(Int32)" on controller "WebApplicationTest1.Controllers.EmployeeController" ("WebApplicationTest1").
+2020-05-21 19:36:12.512 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.Employee"'.
+2020-05-21 19:36:12.513 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)" in 2.0586ms
+2020-05-21 19:36:12.513 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:36:12.513 +05:30 [Information] Request finished in 7.0104ms 200 application/json; charset=utf-8
+2020-05-21 19:36:15.040 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Employee/2  
+2020-05-21 19:36:15.045 +05:30 [Information] Successfully validated the token.
+2020-05-21 19:36:15.046 +05:30 [Information] Authorization was successful.
+2020-05-21 19:36:15.047 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:36:15.048 +05:30 [Information] Route matched with "{action = \"GetEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetEmployee(Int32)" on controller "WebApplicationTest1.Controllers.EmployeeController" ("WebApplicationTest1").
+2020-05-21 19:36:15.051 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.Employee"'.
+2020-05-21 19:36:15.053 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)" in 5ms
+2020-05-21 19:36:15.053 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:36:15.054 +05:30 [Information] Request finished in 14.7726ms 200 application/json; charset=utf-8
+2020-05-21 19:38:19.874 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Employee/2  
+2020-05-21 19:38:19.879 +05:30 [Information] Successfully validated the token.
+2020-05-21 19:38:19.879 +05:30 [Information] Authorization was successful.
+2020-05-21 19:38:19.879 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:38:19.880 +05:30 [Information] Route matched with "{action = \"GetEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetEmployee(Int32)" on controller "WebApplicationTest1.Controllers.EmployeeController" ("WebApplicationTest1").
+2020-05-21 19:38:19.881 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.Employee"'.
+2020-05-21 19:38:19.882 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)" in 2.0326ms
+2020-05-21 19:38:19.882 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:38:19.886 +05:30 [Information] Request finished in 10.6839ms 200 application/json; charset=utf-8
+2020-05-21 19:38:22.500 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Employee/2  
+2020-05-21 19:38:22.505 +05:30 [Information] Successfully validated the token.
+2020-05-21 19:38:22.506 +05:30 [Information] Authorization was successful.
+2020-05-21 19:38:22.506 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:38:22.507 +05:30 [Information] Route matched with "{action = \"GetEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetEmployee(Int32)" on controller "WebApplicationTest1.Controllers.EmployeeController" ("WebApplicationTest1").
+2020-05-21 19:38:22.509 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.Employee"'.
+2020-05-21 19:38:22.510 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)" in 2.9319ms
+2020-05-21 19:38:22.511 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:38:22.511 +05:30 [Information] Request finished in 12.5758ms 200 application/json; charset=utf-8
+2020-05-21 19:39:30.112 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Employee/2  
+2020-05-21 19:39:30.115 +05:30 [Information] Successfully validated the token.
+2020-05-21 19:39:30.122 +05:30 [Information] Authorization was successful.
+2020-05-21 19:39:30.122 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:39:30.122 +05:30 [Information] Route matched with "{action = \"GetEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetEmployee(Int32)" on controller "WebApplicationTest1.Controllers.EmployeeController" ("WebApplicationTest1").
+2020-05-21 19:39:30.124 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.Employee"'.
+2020-05-21 19:39:30.126 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)" in 2.9486ms
+2020-05-21 19:39:30.128 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:39:30.128 +05:30 [Information] Request finished in 15.8002ms 200 application/json; charset=utf-8
+2020-05-21 19:39:31.423 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Employee/2  
+2020-05-21 19:39:31.424 +05:30 [Information] Successfully validated the token.
+2020-05-21 19:39:31.425 +05:30 [Information] Authorization was successful.
+2020-05-21 19:39:31.425 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:39:31.425 +05:30 [Information] Route matched with "{action = \"GetEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetEmployee(Int32)" on controller "WebApplicationTest1.Controllers.EmployeeController" ("WebApplicationTest1").
+2020-05-21 19:39:31.426 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.Employee"'.
+2020-05-21 19:39:31.427 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)" in 1.4167ms
+2020-05-21 19:39:31.427 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:39:31.427 +05:30 [Information] Request finished in 3.8424ms 200 application/json; charset=utf-8
+2020-05-21 19:40:14.839 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Employee/2  
+2020-05-21 19:40:14.841 +05:30 [Information] Successfully validated the token.
+2020-05-21 19:40:14.842 +05:30 [Information] Authorization was successful.
+2020-05-21 19:40:14.842 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:40:14.843 +05:30 [Information] Route matched with "{action = \"GetEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetEmployee(Int32)" on controller "WebApplicationTest1.Controllers.EmployeeController" ("WebApplicationTest1").
+2020-05-21 19:40:14.844 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.Employee"'.
+2020-05-21 19:40:14.848 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)" in 5.3502ms
+2020-05-21 19:40:14.848 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:40:14.849 +05:30 [Information] Request finished in 9.4569ms 200 application/json; charset=utf-8
+2020-05-21 19:40:17.515 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Employee/2  
+2020-05-21 19:40:17.520 +05:30 [Information] Successfully validated the token.
+2020-05-21 19:40:17.521 +05:30 [Information] Authorization was successful.
+2020-05-21 19:40:17.521 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:40:17.521 +05:30 [Information] Route matched with "{action = \"GetEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetEmployee(Int32)" on controller "WebApplicationTest1.Controllers.EmployeeController" ("WebApplicationTest1").
+2020-05-21 19:40:17.523 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.Employee"'.
+2020-05-21 19:40:17.523 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)" in 1.8123ms
+2020-05-21 19:40:17.524 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:40:17.524 +05:30 [Information] Request finished in 9.022ms 200 application/json; charset=utf-8
+2020-05-21 19:40:28.211 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Employee/2  
+2020-05-21 19:40:28.236 +05:30 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-05-21 19:40:28.237 +05:30 [Information] "Bearer" was not authenticated. Failure message: "IDX10503: Signature validation failed. Keys tried: 'System.Text.StringBuilder'.
+Exceptions caught:
+ 'System.Text.StringBuilder'.
+token: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'."
+2020-05-21 19:40:28.238 +05:30 [Information] Authorization failed.
+2020-05-21 19:40:28.238 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2020-05-21 19:40:28.239 +05:30 [Information] Request finished in 28.2024ms 401 
+2020-05-21 19:40:32.342 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Employee/2  
+2020-05-21 19:40:32.344 +05:30 [Information] Successfully validated the token.
+2020-05-21 19:40:32.345 +05:30 [Information] Authorization was successful.
+2020-05-21 19:40:32.345 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:40:32.345 +05:30 [Information] Route matched with "{action = \"GetEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetEmployee(Int32)" on controller "WebApplicationTest1.Controllers.EmployeeController" ("WebApplicationTest1").
+2020-05-21 19:40:32.346 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.Employee"'.
+2020-05-21 19:40:32.348 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)" in 2.7339ms
+2020-05-21 19:40:32.348 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:40:32.349 +05:30 [Information] Request finished in 6.8154ms 200 application/json; charset=utf-8
+2020-05-21 19:45:59.782 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Employee/2  
+2020-05-21 19:45:59.808 +05:30 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-05-21 19:45:59.821 +05:30 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'."
+2020-05-21 19:45:59.821 +05:30 [Information] Authorization failed.
+2020-05-21 19:45:59.822 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2020-05-21 19:45:59.823 +05:30 [Information] Request finished in 40.5174ms 401 
+2020-05-21 19:46:03.282 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Employee/2  
+2020-05-21 19:46:03.311 +05:30 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-05-21 19:46:03.313 +05:30 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'."
+2020-05-21 19:46:03.313 +05:30 [Information] Authorization failed.
+2020-05-21 19:46:03.314 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2020-05-21 19:46:03.316 +05:30 [Information] Request finished in 34.2557ms 401 
+2020-05-21 19:46:37.657 +05:30 [Information] Request starting HTTP/1.1 POST https://localhost:44382/users/authenticate application/json 53
+2020-05-21 19:46:37.658 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.UsersController.Authenticate (WebApplicationTest1)"'
+2020-05-21 19:46:37.658 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"Users\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(WebApplicationTest1.Controllers.AuthenticateModel)" on controller "WebApplicationTest1.Controllers.UsersController" ("WebApplicationTest1").
+2020-05-21 19:46:37.664 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.User"'.
+2020-05-21 19:46:37.665 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.UsersController.Authenticate (WebApplicationTest1)" in 6.8641ms
+2020-05-21 19:46:37.665 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.UsersController.Authenticate (WebApplicationTest1)"'
+2020-05-21 19:46:37.665 +05:30 [Information] Request finished in 8.5679ms 200 application/json; charset=utf-8
+2020-05-21 19:46:48.872 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Employee/2  
+2020-05-21 19:46:48.924 +05:30 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-05-21 19:46:48.925 +05:30 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'."
+2020-05-21 19:46:48.926 +05:30 [Information] Authorization failed.
+2020-05-21 19:46:48.926 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2020-05-21 19:46:48.926 +05:30 [Information] Request finished in 55.6603ms 401 
+2020-05-21 19:46:54.511 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Employee/2  
+2020-05-21 19:46:54.512 +05:30 [Information] Successfully validated the token.
+2020-05-21 19:46:54.513 +05:30 [Information] Authorization was successful.
+2020-05-21 19:46:54.513 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:46:54.513 +05:30 [Information] Route matched with "{action = \"GetEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetEmployee(Int32)" on controller "WebApplicationTest1.Controllers.EmployeeController" ("WebApplicationTest1").
+2020-05-21 19:46:54.514 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.Employee"'.
+2020-05-21 19:46:54.516 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)" in 2.4867ms
+2020-05-21 19:46:54.516 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:46:54.516 +05:30 [Information] Request finished in 5.443ms 200 application/json; charset=utf-8
+2020-05-21 19:47:06.625 +05:30 [Information] User profile is available. Using '"C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-21 19:47:06.986 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-05-21 19:47:06.987 +05:30 [Information] Hosting environment: "Development"
+2020-05-21 19:47:06.987 +05:30 [Information] Content root path: "C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1"
+2020-05-21 19:47:07.047 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/weatherforecast  
+2020-05-21 19:47:07.216 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-05-21 19:47:07.243 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[WebApplicationTest1.WeatherForecast] Get()" on controller "WebApplicationTest1.Controllers.WeatherForecastController" ("WebApplicationTest1").
+2020-05-21 19:47:07.247 +05:30 [Error] Test error
+2020-05-21 19:47:07.253 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.WeatherForecast[]"'.
+2020-05-21 19:47:07.296 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)" in 45.0282ms
+2020-05-21 19:47:07.297 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-05-21 19:47:07.302 +05:30 [Information] Request finished in 261.3448ms 200 application/json; charset=utf-8
+2020-05-21 19:47:15.886 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Employee/2  
+2020-05-21 19:47:16.196 +05:30 [Information] Successfully validated the token.
+2020-05-21 19:47:16.206 +05:30 [Information] Authorization was successful.
+2020-05-21 19:47:16.206 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:47:16.231 +05:30 [Information] Route matched with "{action = \"GetEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetEmployee(Int32)" on controller "WebApplicationTest1.Controllers.EmployeeController" ("WebApplicationTest1").
+2020-05-21 19:47:16.255 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.Employee"'.
+2020-05-21 19:47:16.258 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)" in 26.5273ms
+2020-05-21 19:47:16.258 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:47:16.258 +05:30 [Information] Request finished in 372.8422ms 200 application/json; charset=utf-8
+2020-05-21 19:47:18.187 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Employee/2  
+2020-05-21 19:47:18.196 +05:30 [Information] Successfully validated the token.
+2020-05-21 19:47:18.197 +05:30 [Information] Authorization was successful.
+2020-05-21 19:47:18.197 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:47:18.198 +05:30 [Information] Route matched with "{action = \"GetEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetEmployee(Int32)" on controller "WebApplicationTest1.Controllers.EmployeeController" ("WebApplicationTest1").
+2020-05-21 19:47:18.201 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.Employee"'.
+2020-05-21 19:47:18.202 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)" in 3.7573ms
+2020-05-21 19:47:18.202 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:47:18.202 +05:30 [Information] Request finished in 15.8704ms 200 application/json; charset=utf-8
+2020-05-21 19:47:22.436 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Employee/2  
+2020-05-21 19:47:22.440 +05:30 [Information] Successfully validated the token.
+2020-05-21 19:47:22.443 +05:30 [Information] Authorization was successful.
+2020-05-21 19:47:22.444 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:47:22.446 +05:30 [Information] Route matched with "{action = \"GetEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetEmployee(Int32)" on controller "WebApplicationTest1.Controllers.EmployeeController" ("WebApplicationTest1").
+2020-05-21 19:47:22.467 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.Employee"'.
+2020-05-21 19:47:22.470 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)" in 22.6597ms
+2020-05-21 19:47:22.471 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:47:22.472 +05:30 [Information] Request finished in 36.6108ms 200 application/json; charset=utf-8
+2020-05-21 19:47:38.050 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Employee/2  
+2020-05-21 19:47:38.053 +05:30 [Information] Successfully validated the token.
+2020-05-21 19:47:38.053 +05:30 [Information] Authorization was successful.
+2020-05-21 19:47:38.053 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:47:38.054 +05:30 [Information] Route matched with "{action = \"GetEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetEmployee(Int32)" on controller "WebApplicationTest1.Controllers.EmployeeController" ("WebApplicationTest1").
+2020-05-21 19:47:38.055 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.Employee"'.
+2020-05-21 19:47:38.056 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)" in 2.0753ms
+2020-05-21 19:47:38.056 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:47:38.056 +05:30 [Information] Request finished in 6.2628ms 200 application/json; charset=utf-8
+2020-05-21 19:47:45.183 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Employee/2  
+2020-05-21 19:47:45.187 +05:30 [Information] Successfully validated the token.
+2020-05-21 19:47:45.188 +05:30 [Information] Authorization was successful.
+2020-05-21 19:47:45.188 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:47:45.189 +05:30 [Information] Route matched with "{action = \"GetEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetEmployee(Int32)" on controller "WebApplicationTest1.Controllers.EmployeeController" ("WebApplicationTest1").
+2020-05-21 19:47:45.191 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.Employee"'.
+2020-05-21 19:47:45.192 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)" in 3.1598ms
+2020-05-21 19:47:45.193 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.EmployeeController.GetEmployee (WebApplicationTest1)"'
+2020-05-21 19:47:45.193 +05:30 [Information] Request finished in 10.3854ms 200 application/json; charset=utf-8
+2020-05-21 20:04:38.316 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Employee/2  
+2020-05-21 20:04:38.358 +05:30 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-05-21 20:04:38.420 +05:30 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'."
+2020-05-21 20:04:38.421 +05:30 [Information] Authorization failed.
+2020-05-21 20:04:38.430 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2020-05-21 20:04:38.432 +05:30 [Information] Request finished in 115.3611ms 401 

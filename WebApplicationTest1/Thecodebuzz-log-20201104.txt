@@ -1,0 +1,275 @@
+2020-11-04 16:09:20.382 +05:30 [Information] User profile is available. Using '"C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 16:09:22.366 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-11-04 16:09:22.367 +05:30 [Information] Hosting environment: "Development"
+2020-11-04 16:09:22.367 +05:30 [Information] Content root path: "C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1"
+2020-11-04 16:09:22.594 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/weatherforecast  
+2020-11-04 16:09:22.984 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-11-04 16:09:23.055 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[WebApplicationTest1.WeatherForecast] Get()" on controller "WebApplicationTest1.Controllers.WeatherForecastController" ("WebApplicationTest1").
+2020-11-04 16:09:23.057 +05:30 [Error] Test error
+2020-11-04 16:09:23.061 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.WeatherForecast[]"'.
+2020-11-04 16:09:23.185 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)" in 124.7005ms
+2020-11-04 16:09:23.185 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-11-04 16:09:23.197 +05:30 [Information] Request finished in 606.6405ms 200 application/json; charset=utf-8
+2020-11-04 16:09:23.269 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/favicon.ico  
+2020-11-04 16:09:23.273 +05:30 [Information] Request finished in 3.4203ms 404 
+2020-11-04 16:10:16.839 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Product/  
+2020-11-04 16:10:16.860 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-11-04 16:10:16.863 +05:30 [Information] Route matched with "{action = \"GetProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetProducts()" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-11-04 16:10:17.106 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)" in 242.0746ms
+2020-11-04 16:10:17.156 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-11-04 16:10:17.190 +05:30 [Error] An unhandled exception has occurred while executing the request.
+System.Exception: Test
+   at WebApplicationTest1.Controllers.ProductController.GetProducts() in C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1\Controllers\ProductController.cs:line 23
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2020-11-04 16:10:18.188 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ErrorController.ErrorLocalDevelopment (WebApplicationTest1)"'
+2020-11-04 16:10:18.233 +05:30 [Information] Route matched with "{action = \"ErrorLocalDevelopment\", controller = \"Error\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ErrorLocalDevelopment(Microsoft.AspNetCore.Hosting.IWebHostEnvironment)" on controller "WebApplicationTest1.Controllers.ErrorController" ("WebApplicationTest1").
+2020-11-04 16:10:18.251 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.ErrorController+ErrorResonse"'.
+2020-11-04 16:10:18.269 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ErrorController.ErrorLocalDevelopment (WebApplicationTest1)" in 35.7264ms
+2020-11-04 16:10:18.269 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ErrorController.ErrorLocalDevelopment (WebApplicationTest1)"'
+2020-11-04 16:10:18.270 +05:30 [Information] Request finished in 1430.8871ms 500 application/json; charset=utf-8
+2020-11-04 16:13:12.280 +05:30 [Information] User profile is available. Using '"C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 16:13:29.467 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-11-04 16:13:29.468 +05:30 [Information] Hosting environment: "Development"
+2020-11-04 16:13:29.469 +05:30 [Information] Content root path: "C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1"
+2020-11-04 16:13:29.563 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/weatherforecast  
+2020-11-04 16:13:29.563 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Product/  
+2020-11-04 16:13:29.856 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-11-04 16:13:29.856 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-11-04 16:13:29.884 +05:30 [Information] Route matched with "{action = \"GetProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetProducts()" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-11-04 16:13:43.612 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[WebApplicationTest1.WeatherForecast] Get()" on controller "WebApplicationTest1.Controllers.WeatherForecastController" ("WebApplicationTest1").
+2020-11-04 16:13:43.616 +05:30 [Error] Test error
+2020-11-04 16:13:43.622 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.WeatherForecast[]"'.
+2020-11-04 16:13:43.811 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)" in 13921.6871ms
+2020-11-04 16:13:43.849 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-11-04 16:13:44.058 +05:30 [Error] An unhandled exception has occurred while executing the request.
+System.Exception: Test
+   at WebApplicationTest1.Controllers.ProductController.GetProducts() in C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1\Controllers\ProductController.cs:line 23
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2020-11-04 16:13:44.092 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)" in 479.8415ms
+2020-11-04 16:13:44.205 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-11-04 16:13:44.263 +05:30 [Information] Request finished in 14701.2647ms 200 application/json; charset=utf-8
+2020-11-04 16:13:44.296 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ErrorController.ErrorLocalDevelopment (WebApplicationTest1)"'
+2020-11-04 16:13:44.355 +05:30 [Information] Route matched with "{action = \"ErrorLocalDevelopment\", controller = \"Error\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ErrorLocalDevelopment(Microsoft.AspNetCore.Hosting.IWebHostEnvironment)" on controller "WebApplicationTest1.Controllers.ErrorController" ("WebApplicationTest1").
+2020-11-04 16:13:44.369 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.ErrorController+ErrorResonse"'.
+2020-11-04 16:13:44.372 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ErrorController.ErrorLocalDevelopment (WebApplicationTest1)" in 16.7252ms
+2020-11-04 16:13:44.372 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ErrorController.ErrorLocalDevelopment (WebApplicationTest1)"'
+2020-11-04 16:13:44.372 +05:30 [Information] Request finished in 14813.0734ms 500 application/json; charset=utf-8
+2020-11-04 16:13:53.544 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Product/  
+2020-11-04 16:13:53.547 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-11-04 16:13:53.548 +05:30 [Information] Route matched with "{action = \"GetProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetProducts()" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-11-04 16:13:53.672 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)" in 123.8358ms
+2020-11-04 16:13:53.697 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-11-04 16:13:53.758 +05:30 [Error] An unhandled exception has occurred while executing the request.
+System.Exception: Test
+   at WebApplicationTest1.Controllers.ProductController.GetProducts() in C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1\Controllers\ProductController.cs:line 23
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2020-11-04 16:13:53.759 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ErrorController.ErrorLocalDevelopment (WebApplicationTest1)"'
+2020-11-04 16:13:53.759 +05:30 [Information] Route matched with "{action = \"ErrorLocalDevelopment\", controller = \"Error\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ErrorLocalDevelopment(Microsoft.AspNetCore.Hosting.IWebHostEnvironment)" on controller "WebApplicationTest1.Controllers.ErrorController" ("WebApplicationTest1").
+2020-11-04 16:13:53.760 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.ErrorController+ErrorResonse"'.
+2020-11-04 16:13:53.760 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ErrorController.ErrorLocalDevelopment (WebApplicationTest1)" in 1.1897ms
+2020-11-04 16:13:53.760 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ErrorController.ErrorLocalDevelopment (WebApplicationTest1)"'
+2020-11-04 16:13:53.761 +05:30 [Information] Request finished in 216.7656ms 500 application/json; charset=utf-8
+2020-11-04 16:14:50.817 +05:30 [Information] Request starting HTTP/1.1 POST https://localhost:44382/Product/ application/json 169
+2020-11-04 16:14:50.818 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-11-04 16:14:50.820 +05:30 [Information] Route matched with "{action = \"SaveProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult SaveProducts(Product)" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-11-04 16:14:50.970 +05:30 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-11-04 16:14:50.970 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)" in 149.9821ms
+2020-11-04 16:14:50.970 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-11-04 16:14:50.973 +05:30 [Information] Request finished in 156.3519ms 200 
+2020-11-04 16:14:56.271 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Employee/2  
+2020-11-04 16:14:57.108 +05:30 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-11-04 16:14:57.115 +05:30 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'."
+2020-11-04 16:14:57.121 +05:30 [Information] Authorization failed.
+2020-11-04 16:14:57.130 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2020-11-04 16:14:57.135 +05:30 [Information] Request finished in 859.6702ms 401 
+2020-11-04 16:15:08.399 +05:30 [Information] Request starting HTTP/1.1 POST https://localhost:44382/Product/ application/json 169
+2020-11-04 16:15:08.400 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-11-04 16:15:08.401 +05:30 [Information] Route matched with "{action = \"SaveProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult SaveProducts(Product)" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-11-04 16:15:08.405 +05:30 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-11-04 16:15:08.405 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)" in 3.827ms
+2020-11-04 16:15:08.405 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-11-04 16:15:08.406 +05:30 [Information] Request finished in 7.6458ms 200 
+2020-11-04 16:18:36.543 +05:30 [Information] User profile is available. Using '"C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 16:18:36.837 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-11-04 16:18:36.837 +05:30 [Information] Hosting environment: "Development"
+2020-11-04 16:18:36.837 +05:30 [Information] Content root path: "C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1"
+2020-11-04 16:18:36.884 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/weatherforecast  
+2020-11-04 16:18:37.012 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-11-04 16:18:37.036 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[WebApplicationTest1.WeatherForecast] Get()" on controller "WebApplicationTest1.Controllers.WeatherForecastController" ("WebApplicationTest1").
+2020-11-04 16:18:37.038 +05:30 [Error] Test error
+2020-11-04 16:18:37.042 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.WeatherForecast[]"'.
+2020-11-04 16:18:37.078 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)" in 37.4088ms
+2020-11-04 16:18:37.079 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-11-04 16:18:37.081 +05:30 [Information] Request finished in 201.8108ms 200 application/json; charset=utf-8
+2020-11-04 16:18:49.452 +05:30 [Information] Request starting HTTP/1.1 POST https://localhost:44382/Product/ application/json 169
+2020-11-04 16:18:49.460 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-11-04 16:18:49.477 +05:30 [Information] Route matched with "{action = \"SaveProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult SaveProducts(Product)" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-11-04 16:18:49.516 +05:30 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-11-04 16:18:49.517 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)" in 39.1288ms
+2020-11-04 16:18:49.517 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-11-04 16:18:49.519 +05:30 [Information] Request finished in 68.8267ms 200 
+2020-11-04 16:19:17.282 +05:30 [Information] Request starting HTTP/1.1 POST https://localhost:44382/Product/ application/json 169
+2020-11-04 16:19:17.289 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-11-04 16:19:17.289 +05:30 [Information] Route matched with "{action = \"SaveProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult SaveProducts(Product)" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-11-04 16:19:17.291 +05:30 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-11-04 16:19:17.291 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)" in 1.7118ms
+2020-11-04 16:19:17.291 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-11-04 16:19:17.292 +05:30 [Information] Request finished in 11.587ms 200 
+2020-11-04 16:19:41.537 +05:30 [Information] Request starting HTTP/1.1 POST https://localhost:44382/Product/ application/json 169
+2020-11-04 16:19:41.539 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-11-04 16:19:41.539 +05:30 [Information] Route matched with "{action = \"SaveProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult SaveProducts(Product)" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-11-04 16:19:41.541 +05:30 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-11-04 16:19:41.542 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)" in 1.7794ms
+2020-11-04 16:19:41.542 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-11-04 16:19:41.545 +05:30 [Information] Request finished in 6.0691ms 200 
+2020-11-04 16:20:16.503 +05:30 [Information] User profile is available. Using '"C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 16:20:16.781 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-11-04 16:20:16.782 +05:30 [Information] Hosting environment: "Development"
+2020-11-04 16:20:16.782 +05:30 [Information] Content root path: "C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1"
+2020-11-04 16:20:16.841 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/weatherforecast  
+2020-11-04 16:20:17.024 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-11-04 16:20:17.047 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[WebApplicationTest1.WeatherForecast] Get()" on controller "WebApplicationTest1.Controllers.WeatherForecastController" ("WebApplicationTest1").
+2020-11-04 16:20:17.049 +05:30 [Error] Test error
+2020-11-04 16:20:17.053 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.WeatherForecast[]"'.
+2020-11-04 16:20:17.095 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)" in 41.6596ms
+2020-11-04 16:20:17.097 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-11-04 16:20:17.100 +05:30 [Information] Request finished in 262.9459ms 200 application/json; charset=utf-8
+2020-11-04 16:20:31.161 +05:30 [Information] Request starting HTTP/1.1 POST https://localhost:44382/Product/ application/json 169
+2020-11-04 16:20:31.168 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-11-04 16:20:31.192 +05:30 [Information] Route matched with "{action = \"SaveProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult SaveProducts(Product)" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-11-04 16:20:31.223 +05:30 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-11-04 16:20:31.223 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)" in 30.356ms
+2020-11-04 16:20:31.223 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.SaveProducts (WebApplicationTest1)"'
+2020-11-04 16:20:31.224 +05:30 [Information] Request finished in 63.4328ms 200 
+2020-11-04 16:20:54.571 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Product/  
+2020-11-04 16:20:54.583 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-11-04 16:20:54.586 +05:30 [Information] Route matched with "{action = \"GetProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetProducts()" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-11-04 16:21:00.718 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)" in 6130.918ms
+2020-11-04 16:21:00.739 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-11-04 16:21:00.804 +05:30 [Error] An unhandled exception has occurred while executing the request.
+System.Exception: Test
+   at WebApplicationTest1.Controllers.ProductController.GetProducts() in C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1\Controllers\ProductController.cs:line 23
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2020-11-04 16:21:00.874 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ErrorController.ErrorLocalDevelopment (WebApplicationTest1)"'
+2020-11-04 16:21:00.876 +05:30 [Information] Route matched with "{action = \"ErrorLocalDevelopment\", controller = \"Error\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ErrorLocalDevelopment(Microsoft.AspNetCore.Hosting.IWebHostEnvironment)" on controller "WebApplicationTest1.Controllers.ErrorController" ("WebApplicationTest1").
+2020-11-04 16:21:15.137 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.Controllers.ErrorController+ErrorResonse"'.
+2020-11-04 16:21:15.155 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ErrorController.ErrorLocalDevelopment (WebApplicationTest1)" in 14279.5292ms
+2020-11-04 16:21:15.155 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ErrorController.ErrorLocalDevelopment (WebApplicationTest1)"'
+2020-11-04 16:21:15.156 +05:30 [Information] Request finished in 20589.4637ms 500 application/json; charset=utf-8
+2020-11-04 16:22:43.761 +05:30 [Information] User profile is available. Using '"C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 16:22:44.050 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-11-04 16:22:44.051 +05:30 [Information] Hosting environment: "Development"
+2020-11-04 16:22:44.051 +05:30 [Information] Content root path: "C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1"
+2020-11-04 16:22:44.096 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/weatherforecast  
+2020-11-04 16:22:44.240 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-11-04 16:22:44.259 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[WebApplicationTest1.WeatherForecast] Get()" on controller "WebApplicationTest1.Controllers.WeatherForecastController" ("WebApplicationTest1").
+2020-11-04 16:22:44.261 +05:30 [Error] Test error
+2020-11-04 16:22:44.265 +05:30 [Information] Executing ObjectResult, writing value of type '"WebApplicationTest1.WeatherForecast[]"'.
+2020-11-04 16:22:44.307 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)" in 39.3375ms
+2020-11-04 16:22:44.309 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.WeatherForecastController.Get (WebApplicationTest1)"'
+2020-11-04 16:22:44.313 +05:30 [Information] Request finished in 219.7976ms 200 application/json; charset=utf-8
+2020-11-04 16:22:53.871 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Product/  
+2020-11-04 16:22:53.878 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-11-04 16:22:53.886 +05:30 [Information] Route matched with "{action = \"GetProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetProducts()" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-11-04 16:23:37.746 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebApplicationTest1.Controllers.ProductController+Product, WebApplicationTest1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-11-04 16:23:37.765 +05:30 [Information] Executed action "WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)" in 43876.679ms
+2020-11-04 16:23:37.765 +05:30 [Information] Executed endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-11-04 16:23:37.766 +05:30 [Information] Request finished in 43893.8819ms 200 application/json; charset=utf-8
+2020-11-04 16:27:24.547 +05:30 [Information] User profile is available. Using '"C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 16:27:24.848 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-11-04 16:27:24.849 +05:30 [Information] Hosting environment: "Development"
+2020-11-04 16:27:24.849 +05:30 [Information] Content root path: "C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1"
+2020-11-04 16:27:24.907 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/weatherforecast  
+2020-11-04 16:27:25.048 +05:30 [Information] Request finished in 143.1778ms 404 
+2020-11-04 16:27:41.833 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Product/  
+2020-11-04 16:27:41.839 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-11-04 16:27:41.889 +05:30 [Information] Route matched with "{action = \"GetProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetProducts()" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-11-04 16:29:57.527 +05:30 [Information] User profile is available. Using '"C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 16:29:57.819 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-11-04 16:29:57.820 +05:30 [Information] Hosting environment: "Development"
+2020-11-04 16:29:57.820 +05:30 [Information] Content root path: "C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1"
+2020-11-04 16:29:57.869 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/weatherforecast  
+2020-11-04 16:29:58.019 +05:30 [Information] Request finished in 152.3902ms 404 
+2020-11-04 16:30:42.512 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Product/  
+2020-11-04 16:30:42.525 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-11-04 16:30:42.559 +05:30 [Information] Route matched with "{action = \"GetProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetProducts()" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
+2020-11-04 17:39:33.436 +05:30 [Information] User profile is available. Using '"C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 17:39:33.748 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-11-04 17:39:33.748 +05:30 [Information] Hosting environment: "Development"
+2020-11-04 17:39:33.748 +05:30 [Information] Content root path: "C:\Users\Home\source\repos\WebApplicationTest1\WebApplicationTest1"
+2020-11-04 17:39:33.802 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/weatherforecast  
+2020-11-04 17:39:33.934 +05:30 [Information] Request finished in 142.101ms 404 
+2020-11-04 17:39:38.840 +05:30 [Information] Request starting HTTP/1.1 GET https://localhost:44382/Product/  
+2020-11-04 17:39:38.851 +05:30 [Information] Executing endpoint '"WebApplicationTest1.Controllers.ProductController.GetProducts (WebApplicationTest1)"'
+2020-11-04 17:39:38.881 +05:30 [Information] Route matched with "{action = \"GetProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetProducts()" on controller "WebApplicationTest1.Controllers.ProductController" ("WebApplicationTest1").
