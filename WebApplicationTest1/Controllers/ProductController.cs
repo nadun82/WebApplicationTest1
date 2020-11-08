@@ -11,27 +11,25 @@ namespace WebApplicationTest1.Controllers
         [HttpGet]
         public IActionResult GetProducts()
         {
-            
-            List<Product> list = new List<Product>();
-            list.Add(new Product { id = 11, name = "IPhone", description = "Apple 6 ", unitprice = 75000.25 });
-            list.Add(new Product { id = 12, name = "Samsung", description = "Galaxy", unitprice = 175000.25 });
-            list.Add(new Product { id = 13, name = "OPPO", description = "Oppo V5", unitprice = 45000.25 });
-            list.Add(new Product { id = 14, name = "Huwawei", description = "Huwai 5X ", unitprice = 35000.25 });
-            list.Add(new Product { id = 14, name = "Huwawei", description = "Huwai 6X ", unitprice = 35000.25 });
-
-            // throw new Exception("Test");
-            //return StatusCode(404, errorReponse);
+            decimal dec = 3 / 2; // Noncompliant
 
             string numberList = "";
-
             for (int i = 0; i <= 100; i++)
             {
                 numberList += i + " ";
             }
             
 
+            List<Product> list = new List<Product>();
+            list.Add(new Product { id = 11, name = "IPhone", description = "Apple 6 ", unitprice = 75000.25 });
+            list.Add(new Product { id = 12, name = "Samsung", description = "Galaxy", unitprice = 175000.25 });
+            list.Add(new Product { id = 13, name = "OPPO", description = "Oppo V5", unitprice = 45000.25 });
+            list.Add(new Product { id = 14, name = "Huwawei", description = "Huwai 5X ", unitprice = 35000.25 });
+                      
+                                      
+            // throw new Exception("Test");
             return Ok(list);
-            
+            //return StatusCode(404, errorReponse);
         }
 
         [HttpPost]
