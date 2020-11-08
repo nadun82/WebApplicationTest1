@@ -25,7 +25,7 @@ namespace WebApplicationTest1.Controllers
             //        "This shouldn't be invoked in non-development environments.");
             //}
 
-            var context = HttpContext.Features.Get<IExceptionHandlerFeature>();
+           // var context = HttpContext.Features.Get<IExceptionHandlerFeature>();
 
             //ErrorResonse errorReponse = new ErrorResonse { ErrorId = 50010, ErrorMessgae = "Error in Server " ,StackTrace= context.Error.StackTrace };
             //_logger.Log(LogLevel.Error, JsonSerializer.Serialize(errorReponse));
