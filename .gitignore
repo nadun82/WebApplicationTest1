@@ -338,3 +338,6 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/.scannerwork/report-task.txt
+/.scannerwork/.sonar_lock
+/sonar-project.properties
