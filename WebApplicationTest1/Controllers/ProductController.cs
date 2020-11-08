@@ -13,11 +13,11 @@ namespace WebApplicationTest1.Controllers
         {
             decimal dec = 3 / 2; // Noncompliant
 
-            string numberList = "";
-            for (int i = 0; i <= 100; i++)
-            {
-                numberList += i + " ";
-            }
+            //string numberList = "";
+            //for (int i = 0; i <= 100; i++)
+            //{
+            //    numberList += i + " ";
+            //}
             
 
             List<Product> list = new List<Product>();
